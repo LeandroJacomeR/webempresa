@@ -4,6 +4,7 @@ from core import urls as core_urls
 from services import urls as services_urls
 from blog import urls as blog_url
 from social import urls as social_urls
+from pages import urls as pages_urls
 
 from django.conf import settings
 
@@ -13,6 +14,7 @@ urlpatterns = [
     path('', include(services_urls)),
     path('', include(blog_url)),
     path('', include(social_urls)),
+    path('', include(pages_urls)),
 ]
 
 if settings.DEBUG:
